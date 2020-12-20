@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>thank you</title>
+    <link rel="stylesheet" href="/css/style.css" />
+</head>
+<body>
+    <div id="header">
+        <div id="logo">
+            <h3><span>Payment</span> Gateway</h3>
+        </div>
+
+        <nav>
+            <a href="/">HOME</a>
+            <a href="#">ABOUT</a>
+            <a href="#">CONTACT US</a>
+            
+        </nav>
+    </div>
+    <form align = "center" action="payment" method="POST"> 
+        <script
+            src="//checkout.stripe.com/v2/checkout.js"
+            class="stripe-button"
+            data-key="<%= key %>" 
+            data-amount="<%= am %>" 
+            data-currency="INR" 
+            data-name="TheRealityhunt.live" 
+            data-description="Read Daily News" 
+            data-locale="auto" > 
+            </script> 
+        </form> 
+    
+</body>
+</html>
